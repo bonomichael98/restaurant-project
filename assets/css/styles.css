@@ -17,3 +17,21 @@ h1{
 .color-4 {
     color: #414141
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar {
+    width: 200px;
+    font-size: 28px;
+}
+
+.navbar-item img {
+    max-height: 75px;
+}
+
+.background-img {
+    background-image: url("../images/rhinegeist-interior.jpg");
+}
