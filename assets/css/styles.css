@@ -1,3 +1,7 @@
+* {
+    background-color: grey;
+}
+
 h1{
     color:red;
 }
@@ -32,6 +36,11 @@ h1{
     max-height: 75px;
 }
 
-.background-img {
-    background-image: url("../images/rhinegeist-interior.jpg");
+#background-image {
+    width: 100%;
+    height: auto;
+}
+
+.bordered {
+    border: 2px solid black;
 }
