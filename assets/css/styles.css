@@ -48,3 +48,7 @@ h1{
 .white-text {
     color: white;
 }
+
+.bordered-4 {
+    border: 2px solid black;
+}
