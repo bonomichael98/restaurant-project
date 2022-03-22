@@ -49,6 +49,17 @@ h1{
     color: white;
 }
 
-.bordered-4 {
+.center-vert {
+    align-items:center;
+}
+
+.drinks-bg {
     border: 2px solid black;
+    background-color: #525252;
+    margin: 7.6%;
+    height: 320px;
+}
+
+.text-right {
+    text-align: right;
 }
