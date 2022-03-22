@@ -12,6 +12,7 @@
     <div class="columns">
         <div class="column">
             <section class="section flex-container">
+
                 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
                         <a class="navbar-item" >
@@ -19,7 +20,7 @@
                         </a>
         
                         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarExampleTransparentExample">
-                            <span aria-hidden="true">Home</span>
+                            <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                         </a>
@@ -35,10 +36,10 @@
                                 Menu Items
                             </a>
         
-                            
                             <a class="navbar-item" href="#about-us">
                                 About Us
                             </a>
+
         
                 <!-- <div class="navbar-dropdown">
                     <a class="navbar-item">
@@ -71,6 +72,37 @@
         </div>
     </section>
 
+    <section id="drinks columns">
+
+        <div class="column boxed drinks-bg columns">
+            <div class="column drink-img">
+                <p>Text</p>
+            </div>
+            <div class="column drink-text">
+                <p>Text</p>
+            </div>
+        </div>
+
+        <div class="column boxed drinks-bg columns">
+            <div class="column drink-text">
+                <p>Text</p>
+            </div>
+            <div class="column drink-img">
+                <p>Text</p>
+            </div>
+        </div>
+
+        <div class="column boxed drinks-bg columns">
+            <div class="column drink-img">
+                <p>Text</p>
+            </div>
+            <div class="column drink-text">
+                <p>Text</p>
+            </div>
+        </div>
+        
+    </section>
+
     <section class="section">
         <div class="columns">
             <div class="container has-text-centered " id="about-us">
@@ -79,19 +111,22 @@
         </div>
         <div class="columns">
 
-            <div class="container has-text-centered white-text is-size-4 has-text-weight-semibold column" id="about-us">
-                <p>Get Directions</p>
+            <div class="container has-text-centered white-text is-size-4 column flex-container center-vert" id="about-us">
+
+                <p class="has-text-weight-semibold"> Get Directions</p>
+
+                <form action="http://maps.google.com/maps" method="get" target="_blank">
+                    <!--<label for="saddr" class="white-text">Enter your address</label>-->
+                    <input type="text" name="saddr" />
+                    <input type="hidden" name="daddr" value="1910 Elm St, Cincinnati, OH 45202 (Rhinegeist Brewery)"/>
+                    <input type="submit" value="Enter your address"/>
+                 </form>
             </div>
 
             <div class="card-content column">
                 <div class="media">
                     <div class="media-content">
-                        <form action="http://maps.google.com/maps" method="get" target="_blank">
-                            <!--<label for="saddr" class="white-text">Enter your address</label>-->
-                            <input type="text" name="saddr" />
-                            <input type="hidden" name="daddr" value="1910 Elm St, Cincinnati, OH 45202 (Rhinegeist Brewery)"/>
-                            <input type="submit" value="Enter your address"/>
-                         </form>
+                        
                          <div class="bordered-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.5257372079964!2d-84.52229524874966!3d39.117266379436906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b3f9acd61b67%3A0x402ea6be65897064!2sRhinegeist%20Brewery!5e0!3m2!1sen!2sus!4v1647818729714!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="map" class="bordered-4"></iframe></div>
                          
                     </div>
