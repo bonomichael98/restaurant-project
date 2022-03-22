@@ -1,13 +1,7 @@
-let fetchCocktail = function() {
-    let cocktailApiURL = 'http://www.thecocktaildb.com/api/json/v1/1/random.php';
+let cocktailApiURL = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
 
-    fetch(cocktailApiURL) 
-        .then(function(response) {
-            if (response.ok) {
-                response.json().then(function(data){
-                   console.log(data);
-            })}});
-            
-        }
-
-fetchCocktail();
+fetch(cocktailApiURL)
+    .then(function(response) {
+        console.log(response)
+        return response.json();
+    })
