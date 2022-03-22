@@ -27,6 +27,10 @@ h1{
     justify-content: space-around;
 }
 
+.title {
+    text-align: center;
+}
+
 .navbar {
     width: 200px;
     font-size: 28px;
@@ -62,4 +66,16 @@ h1{
 
 .text-right {
     text-align: right;
+}
+
+.align-img-left {
+    margin: 36px 36px 36px 36px;
+}
+
+.align-img-right {
+    margin: 36px 36px 36px 36px;
+}
+
+.drink-text {
+    
 }
