@@ -3,9 +3,10 @@ let cocktailText2 = document.getElementById("cocktail2-text");
 let cocktailText3 = document.getElementById("cocktail3-text");
 let cocktailText = [cocktailText1,cocktailText2,cocktailText3];
 
-let cocktail1Img = document.getElementById("cocktail1-img");
-let cocktail2Img = document.getElementById("cocktail2-img");
-let cocktail3Img = document.getElementById("cocktail3-img");
+let cocktailImg1 = document.getElementById("cocktail1-img");
+let cocktailImg2 = document.getElementById("cocktail2-img");
+let cocktailImg3 = document.getElementById("cocktail3-img");
+let cocktailImg = [cocktailImg1,cocktailImg2,cocktailImg3];
 
 let cocktailSetup = function() {
     for (let i = 0; i<3 ; i++) {
@@ -24,12 +25,15 @@ let cocktailSetup = function() {
                         console.log(cocktail);
                         let textHead = document.createElement("h3");
                         textHead.textContent = cocktail.name;
+                        textHead.classList = "subtitle is-4"
 
                         let textBody = document.createElement("p");
                         textBody.textContent = cocktail.description;
 
                         cocktailText[i].appendChild(textHead);
                         cocktailText[i].appendChild(textBody);
+
+                        cocktailImg[i].innerHTML = "<img src="+cocktail.img+" alt="+cocktail.name+" class=\"drink-img\">";
 
                 })}});
             }

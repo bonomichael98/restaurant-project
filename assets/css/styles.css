@@ -76,6 +76,7 @@ h1{
     margin: 36px 36px 36px 36px;
 }
 
-.drink-text {
-    
+.drink-img {
+    max-height:100%;
+    max-width:100%;
 }
