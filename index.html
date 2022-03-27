@@ -76,7 +76,7 @@
     <section id="menu-items">
 
         <div class="column boxed drinks-bg columns">
-            <div id="cocktail1-img" class="column drink-img align-img-left">
+            <div id="cocktail1-img" class="column drink-img align-img-left bg-fix">
                 <!--put api cocktail image 1 in this div-->
                 <img alt="cocktail1">
             </div>
@@ -91,14 +91,14 @@
                 <!--put api cocktail description 2 in this div-->
                 
             </div>
-            <div id="cocktail2-img" class="column drink-img align-img-right">
+            <div id="cocktail2-img" class="column drink-img align-img-right bg-fix">
                     <!--put api cocktail image 2 in this div-->
                     <img alt="cocktail2">
             </div>
         </div>
 
         <div class="column boxed drinks-bg columns">
-            <div id="cocktail3-img" class="column drink-img align-img-left">
+            <div id="cocktail3-img" class="column drink-img align-img-left bg-fix">
                 <!--put api cocktail image 3 in this div-->
                 <img alt="cocktail3">
             </div>
@@ -121,17 +121,18 @@
             <div class="container has-text-centered white-text is-size-4 column flex-container center-vert" id="about-us">
                 <div class="column">
                     <p class="has-text-weight-semibold"> Get Directions</p>
-                    <!-- <form action="" method="get" id="your-location">
+                    <!-- form to send address -->
+                    <form action="" method="get" id="location-form">
                         <input type="text" name="">
 
-                    </form> -->
+                    </form>
 
-                <form action="http://maps.google.com/maps" method="get" target="_blank">
+                <!-- <form action="http://maps.google.com/maps" method="get" target="_blank">
                     <label for="saddr" class="white-text">Enter your address</label>
                     <input type="text" name="saddr" />
                     <input type="hidden" name="daddr" value="1910 Elm St, Cincinnati, OH 45202 (Rhinegeist Brewery)"/>
                     <input type="submit" value="Enter your address"/>
-                 </form>
+                 </form> -->
                 </div>
 
                 <div class="columns">
@@ -144,9 +145,9 @@
                     <div class="media-content">
                         
                         <div class="bordered-4">
-                            <!-- <iframe style='border:none' width='100%' height='100%'  src="https://maps.openrouteservice.org/#/place/1910%20Elm%20Street,Cincinnati,OH,USA/@-84.520125,39.117031,10/data/55,130,32,102,9,96,46,4,32,246,5,112,29,128,76,12,226,1,113,64,78,8,41,128,52,33,175,128,134,56,12,96,5,150,184,28,101,249,37,62,57,106,0,54,101,69,128,204,1,56,1,208,8,0,192,21,128,19,40,129,1,216,4,1,100,151,220,95,5,197,57,32,14,101,128,45,0,14,62,66,22,29,16,13,159,98,190,163,150,200,11,236,64,23,156,56,1,108,176,4,101,17,172,128,79,54,88,32,100,40,40,56,248,104,24,140,136,44,56,190,129,0,170,72,208,248,40,0,4,0,202,80,60,225,32,118,64,0/embed/en-us"></iframe> -->
 
                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.5257372079964!2d-84.52229524874966!3d39.117266379436906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b3f9acd61b67%3A0x402ea6be65897064!2sRhinegeist%20Brewery!5e0!3m2!1sen!2sus!4v1647818729714!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="map" class="bordered-4"></iframe>
+
                         </div>
                          
                     </div>
@@ -160,6 +161,7 @@
 
 </body>
 <footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </footer>
 </html>

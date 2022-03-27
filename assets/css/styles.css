@@ -68,14 +68,6 @@ h1{
     text-align: right;
 }
 
-.align-img-left {
-    margin: 36px 36px 36px 36px;
-}
-
-.align-img-right {
-    margin: 36px 36px 36px 36px;
-}
-
 .drink-img {
     max-height:100%;
     max-width:100%;
@@ -90,4 +82,8 @@ h1{
 
 #about-us {
     height: 500px;
+}
+
+.bg-fix {
+    background-color: #525252;
 }
