@@ -1,3 +1,6 @@
+let burgerIcon = document.getElementById('burger');
+let dropMenu = document.getElementById('navbar');
+
 let cocktailText1 = document.getElementById("cocktail1-text");
 let cocktailText2 = document.getElementById("cocktail2-text");
 let cocktailText3 = document.getElementById("cocktail3-text");
@@ -16,13 +19,13 @@ let cocktailSetup = function() {
             .then(function(response) {
                 if (response.ok) {
                     response.json().then(function(data){
-                        console.log(data);
+                        // console.log(data);
                         let cocktail = {
                             name: data.drinks[0].strDrink,
                             img: data.drinks[0].strDrinkThumb,
                             description: data.drinks[0].strInstructions
                         }
-                        console.log(cocktail);
+                        // console.log(cocktail);
                         let textHead = document.createElement("h3");
                         textHead.textContent = cocktail.name;
                         textHead.classList = "subtitle is-4"
@@ -39,14 +42,11 @@ let cocktailSetup = function() {
             }
 }
 
+let toggleBurger = function() {
+    burgerIcon.classList.toggle('is-active');
+    dropMenu.classList.toggle('is-active');
+};
+
 cocktailSetup();
-// let cocktailApiURL = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
-// let googleAutocompleteURL = "https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters&key=AIzaSyCUWf_0fYUln2C1Z1GPbLLPT3fERLMMx7M";
 
-// fetch(cocktailApiURL)
-//     .then(function(response) {
-//         console.log(response);
-//         return response.json();
-//     });
-
-// fetch(googleAutocompleteURL)
+burgerIcon.addEventListener("click",toggleBurger);
