@@ -87,3 +87,12 @@ h1{
 .bg-fix {
     background-color: #525252;
 }
+
+.directions {
+    margin: auto;
+    padding-top: 30px;
+    height:200px;
+    width:85%;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+}
