@@ -26,3 +26,17 @@ The third API we implemented was Openrouteservice Directions. The API takes in t
 We used Bulma to style the page.
 
 We used JQuery for functionality of the website.
+
+
+## 04 Snapshots
+
+![img1](https://imgur.com/xSnlhrv)
+![img2](https://imgur.com/gzQ5trB)
+![img3](https://imgur.com/Nh5pqvA)
+![img4](https://imgur.com/uXpDUIZ)
+
+Link to deployed application
+https://bonomichael98.github.io/restaurant-project/
+
+Link to repository
+https://github.com/bonomichael98/restaurant-project/
