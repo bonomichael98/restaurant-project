@@ -92,28 +92,43 @@ $(document).ready(function(){
                 )
                 //console.log(almostReadyCoordinates);
 
-                let readyCoordinates = almostReadyCoordinates.slice(1);
-                console.log(readyCoordinates)
+                let nearlyReadyCoordinates = almostReadyCoordinates.slice(1);
+                //console.log(nearlyReadyCoordinates);
+
+                let coordinatesArray = nearlyReadyCoordinates.split(",");
+                //console.log(coordinatesArray);
+
+                coordinatesArray.splice(0, 1);
+                coordinatesArray.splice(2);
+
+                readyCoordinates = coordinatesArray.join(",")
+                console.log(readyCoordinates);
+                
+            
+
+                
                 //answer.indexOf("bbox")
 
 
                 //beginning of directions
-                //var request = new XMLHttpRequest();
+                var request = new XMLHttpRequest();
 
 
                 //send the receivedCoordinates from coordinateRequest here
-                // request.open('GET', 'https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62484ea1ed0d62b14f15830ccc2be6e3572b&start=' + readyCoordinates + '&end=39.1171543,-84.5199081');
+                request.open('GET', 'https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62484ea1ed0d62b14f15830ccc2be6e3572b&start=' + readyCoordinates + '&end=39.108608,-84.3022336');
 
-                // request.setRequestHeader('Accept', 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8');
+                console.log('https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62484ea1ed0d62b14f15830ccc2be6e3572b&start=' + readyCoordinates + '&end=39.108608,-84.3022336')
 
-                // request.onreadystatechange = function () {
-                // if (this.readyState === 4) {
-                //     //console.log('Status:', this.status);
-                //     console.log('Headers:', this.getAllResponseHeaders());
-                //     //console.log('Body:', this.responseText);
-                // }
-                // };
-                // request.send();
+                request.setRequestHeader('Accept', 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8');
+
+                request.onreadystatechange = function () {
+                if (this.readyState === 4) {
+                    //console.log('Status:', this.status);
+                    //console.log('Headers:', this.getAllResponseHeaders());
+                    console.log('Body:', this.responseText);
+                }
+                };
+                request.send();
 
 
 
