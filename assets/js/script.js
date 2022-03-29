@@ -105,6 +105,7 @@ $(document).ready(function(){
                 //console.log(readyCoordinates);
                 
             
+                $("#directions-text").text("Starting Location: " + readyCoordinates + ". Ending Location 39.108608,-84.3022336");
 
                 
                 //answer.indexOf("bbox")
@@ -135,7 +136,7 @@ $(document).ready(function(){
                     let directions = answer2.split('"segments": [').pop().split('"summary":' )
                     console.log(directions);
 
-                    $("#directions-text").text(directions);
+                    //$("#directions-text").text(directions);
 
 
 
