@@ -97,6 +97,23 @@ $(document).ready(function(){
                 //answer.indexOf("bbox")
 
 
+                //beginning of directions
+                //var request = new XMLHttpRequest();
+
+
+                //send the receivedCoordinates from coordinateRequest here
+                // request.open('GET', 'https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62484ea1ed0d62b14f15830ccc2be6e3572b&start=' + readyCoordinates + '&end=39.1171543,-84.5199081');
+
+                // request.setRequestHeader('Accept', 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8');
+
+                // request.onreadystatechange = function () {
+                // if (this.readyState === 4) {
+                //     //console.log('Status:', this.status);
+                //     console.log('Headers:', this.getAllResponseHeaders());
+                //     //console.log('Body:', this.responseText);
+                // }
+                // };
+                // request.send();
 
 
 
@@ -108,7 +125,10 @@ $(document).ready(function(){
 
 
 
-                
+
+
+
+
                 }
             };
         coordinateRequest.send();
@@ -123,21 +143,21 @@ $(document).ready(function(){
 
 
 
-var request = new XMLHttpRequest();
+// var request = new XMLHttpRequest();
 
 
-//send the receivedCoordinates from coordinateRequest here
-request.open('GET', 'https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62484ea1ed0d62b14f15830ccc2be6e3572b&start=' + receivedCoordinates + '&end=39.1171543,-84.5199081');
+// //send the receivedCoordinates from coordinateRequest here
+// request.open('GET', 'https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62484ea1ed0d62b14f15830ccc2be6e3572b&start=' + readyCoordinates + '&end=39.1171543,-84.5199081');
 
-// request.setRequestHeader('Accept', 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8');
+//  request.setRequestHeader('Accept', 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8');
 
-// request.onreadystatechange = function () {
-//   if (this.readyState === 4) {
-//     //console.log('Status:', this.status);
-//     //console.log('Headers:', this.getAllResponseHeaders());
-//     //console.log('Body:', this.responseText);
-//   }
-// };
+//  request.onreadystatechange = function () {
+//    if (this.readyState === 4) {
+//      //console.log('Status:', this.status);
+//      //console.log('Headers:', this.getAllResponseHeaders());
+//      //console.log('Body:', this.responseText);
+//    }
+//  };
 
 // request.send();
 
