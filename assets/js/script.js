@@ -105,7 +105,7 @@ $(document).ready(function(){
                 //console.log(readyCoordinates);
                 
             
-                $("#directions-text").text("Starting Location: " + readyCoordinates + ". Ending Location 39.108608,-84.3022336");
+                $("#directions-text").text("Starting Location: " + readyCoordinates + ". Ending Location: 39.108608,-84.3022336");
 
                 
                 //answer.indexOf("bbox")
