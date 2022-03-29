@@ -102,7 +102,7 @@ $(document).ready(function(){
                 coordinatesArray.splice(2);
 
                 readyCoordinates = coordinatesArray.join(",")
-                console.log(readyCoordinates);
+                //console.log(readyCoordinates);
                 
             
 
@@ -117,7 +117,10 @@ $(document).ready(function(){
                 //send the receivedCoordinates from coordinateRequest here
                 request.open('GET', 'https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62484ea1ed0d62b14f15830ccc2be6e3572b&start=' + readyCoordinates + '&end=39.108608,-84.3022336');
 
-                console.log('https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62484ea1ed0d62b14f15830ccc2be6e3572b&start=' + readyCoordinates + '&end=39.108608,-84.3022336')
+                //request.open('GET', 'https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62484ea1ed0d62b14f15830ccc2be6e3572b&start=8.681495,49.41461&end=8.687872,49.420318');
+
+
+               
 
                 request.setRequestHeader('Accept', 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8');
 
@@ -125,12 +128,24 @@ $(document).ready(function(){
                 if (this.readyState === 4) {
                     //console.log('Status:', this.status);
                     //console.log('Headers:', this.getAllResponseHeaders());
-                    console.log('Body:', this.responseText);
-                }
+                    //console.log('Body:', this.responseText);
+                    let response2 = this.responseText;
+                    let answer2 = JSON.stringify(response2);
+
+                    let directions = answer2.split('"segments": [').pop().split('"summary":' )
+                    console.log(directions);
+
+                    $("#directions-text").text(directions);
+
+
+
+                    }
                 };
                 request.send();
 
 
+
+                
 
 
 
